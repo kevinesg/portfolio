@@ -42,7 +42,7 @@
       { "component": "CPU", "value": "AMD Ryzen 7 5700U" },
       { "component": "GPU", "value": "AMD Radeon Graphics" },
       { "component": "RAM", "value": "16GB" },
-      { "component": "Storage", "value": "500GB SSD" }
+      { "component": "Storage", "value": "500GB SSD" },
       { "component": "OS", "value": "EndeavourOS" }
     ]
   }
