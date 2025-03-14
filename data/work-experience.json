@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "company": "LBC Express, Inc.",
+    "position": "Data Scientist",
+    "startDate": "NOV 2021",
+    "endDate": "MAY 2022",
+    "description": [
+      "Automated bi-monthly availment information from initiatives and promos then presented in Power BI dashboards used by business units for performance reports",
+      "Responsible for ad hoc reports and requests such as: forming the list of customers from a database fit within a given criteria, customer profiling via clustering, and data preprocessing/cleaning in general"
+    ],
+    "tech": [
+      "Python",
+      "SQL (MySQL & SQL Server)",
+      "Azure Databricks",
+      "PowerBI"
+    ]
+  },
+  {
+    "id": 2,
+    "company": "Growsari Enterprise, Inc.",
+    "position": "Data Analyst",
+    "startDate": "MAY 2022",
+    "endDate": "FEB 2024",
+    "description": [
+      "Removed data discrepancy across multiple daily/weekly reports by creating source of truth data marts for the company's Supply and Inventory data",
+      "Automated Daily and Weekly Sales Reports referenced by stakeholders in decision-making"
+    ],
+    "tech": [
+      "Python",
+      "SQL (RedShift & MySQL)",
+      "dbt",
+      "Airflow",
+      "AWS EC2",
+      "Gitlab",
+      "Redash"
+    ]
+  },
+  {
+    "id": 3,
+    "company": "SariSuki Stores, Inc.",
+    "position": "Data Engineer",
+    "startDate": "FEB 2024",
+    "endDate": "NOV 2024",
+    "description": [
+      "Optimized dbt models updates by changing table materialization to incremental, reducing BigQuery write costs and update runtime",
+      "Restructured and optimized existing Airflow DAGs; removed redundant scheduled dbt model updates and added new ones for new data sources"
+    ],
+    "tech": [
+      "Python",
+      "SQL (BigQuery)",
+      "dbt",
+      "Airflow",
+      "GCP",
+      "AWS EC2",
+      "GitHub",
+      "Metabase"
+    ]
+  },
+  {
+    "id": 4,
+    "company": "SAVii",
+    "position": "Data Engineer",
+    "startDate": "NOV 2024",
+    "endDate": null,
+    "description": [
+      "Created a complete documentation of data flow from raw to transformed tables",
+      "Migrated scheduled queries from BigQuery to dbt models for better version control and lineage tracking"
+    ],
+    "tech": ["Python", "SQL (BigQuery)", "dbt", "Airflow", "GCP", "GitHub"]
+  }
+]

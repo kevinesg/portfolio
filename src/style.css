@@ -1,0 +1,339 @@
+/* Light Mode Colors */
+.light-mode {
+  --color-primary: #d8d8d8;
+  --color-primary-variant: #b3b3b3;
+  --color-secondary: #03dac6;
+  --color-secondary-variant: #018786;
+  --color-surface: #ffffff;
+  --color-error: #b00020;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #000000;
+  --color-on-surface: #000000;
+  --color-on-error: #ffffff;
+  --color-text-secondary: #757575;
+
+
+  --color-background: #f7f2f2;
+  --color-card-background: #ffffff;
+  --color-text-primary: #000000;
+  --color-border: #e0e0e0;
+}
+
+/* Dark Mode Colors */
+.dark-mode {
+  --color-primary: #8b8b8b;
+  --color-primary-variant: #d6d5d5;
+  --color-secondary: #03dac6;
+  --color-secondary-variant: #03dac6;
+  --color-surface: #121212;
+  --color-error: #cf6679;
+  --color-on-primary: #000000;
+  --color-on-secondary: #000000;
+  --color-on-surface: #ffffff;
+  --color-on-error: #000000;
+  --color-text-secondary: #b0b0b0;
+  --color-border: #333333;
+
+
+  --color-background: #121212;
+  --color-card-background: #1f2937;
+  --color-text-primary: #ffffff;
+}
+
+:root {
+  --padding-top: 100px; /* padding for navbar */
+  --footer-height: 160px;
+  --container-min-height: calc(100vh - var(--padding-top) - var(--footer-height));
+}
+
+* {
+  font-family: "Ubuntu Mono";
+}
+
+.main-div {
+  max-width: 800px; /* Adjust to your desired width */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Optional: adds some space on small screens */
+  width: 100%; /* Takes full width on small screens */
+  padding-top: var(--padding-top);
+  border: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-background);
+  border-bottom: 1px solid var(--color-background);
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: var(--container-min-height);
+}
+
+.container > .card {
+  margin-bottom: 16px; /* Adds spacing below each div */
+}
+
+.card {
+  background-color: var(--color-card-background);
+  color: var(--color-text-primary);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.card > * {
+  background-color: transparent;
+}
+
+.summaries-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the cards */
+}
+
+.summary {
+  flex: 1; /* Make the cards take equal space */
+  background-color: var(--color-card-background);
+  color: var(--color-text-primary);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.hide-me {
+  color: var(--color-card-background);
+  font-size: 5px;
+}
+
+.hide-me-too {
+  color: var(--color-background);
+}
+
+a {
+  color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.exp-container {
+  display: flex;
+  flex-direction: column;
+}
+.exp-container > .card {
+  margin-bottom: 16px; /* Adds spacing below each div */
+}
+
+.projects {
+  margin-bottom: 50px;
+}
+
+/* Custom styles for the TextField component */
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+}
+
+.custom-input {
+  border: 1px solid #ccc; /* Light gray border as default */
+  /* Add some padding and other styling as needed */
+  padding: 8px;
+  border-radius: 4px;
+  border-color: var(--color-text-primary);
+}
+
+.custom-input:focus {
+  border-color: var(--color-text-primary);
+  outline: none;
+}
+
+
+/* Styles for the pc-setup section */
+.pc-setup img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.pc-setup table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pc-setup th, .pc-setup td {
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.pc-setup th {
+  background-color: var(--color-card-background);
+  color: var(--color-text-primary);
+}
+
+.pc-setup td {
+  background-color: var(--color-card-background);
+  color: var(--color-text-primary);
+}
+
+
+
+.pc-setup a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Pushes content to opposite ends */
+  padding-top: 100px;
+  align-items: center; /* Vertically centers the content */
+  height: var(--footer-height);
+  background-color: var(--color-background);
+}
+
+.footer-left {
+  /* Styles for left content */
+  justify-content: flex-start;
+}
+
+.footer-right {
+  /* Styles for right content */
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.footer-right a {
+  text-decoration: none; /* Optional: removes underline from links */
+}
+
+.p-no-indent {
+  text-indent: 0;
+}
+
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  color: var(--color-text-secondary);
+}
+
+div {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+
+
+.blur-fade-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Match your margin-top */
+  z-index: 50; /* Below your navbar but above content */
+  
+  /* Blur effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  /* Gradient fade effect */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  
+  pointer-events: none; /* Allows clicking through this element */
+}
+
+
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+}
+
+
+.dock-navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.dock-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light translucent */
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 8px 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  list-style: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark mode dock styling */
+.dark-mode .dock-list {
+  background-color: rgba(40, 40, 40, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dock-item {
+  display: flex;
+  align-items: center;
+}
+
+.dock-item a {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dock-item a svg {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* Hover effects */
+.dock-item a:hover {
+  transform: translateY(0px);
+  background-color: var(--color-primary-variant);
+  color: var(--color-on-primary);
+}
+
+
+/* Toggle button position */
+.mode-toggle {
+  margin-left: 8px;
+  padding-left: 25px;
+  margin-right: 0px;
+  padding-right: 0px;
+  border-left: 1px solid var(--color-border);
+}
+
+/* Active link styles */
+.dock-item .active {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}

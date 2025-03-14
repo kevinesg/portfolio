@@ -1,0 +1,51 @@
+[
+  {
+    "country": "Japan",
+    "places": ["Tokyo"],
+    "year": 2023,
+    "photo": "/src/assets/photos/travel/tokyo_2023.jpg"
+  },
+  {
+    "country": "Taiwan",
+    "places": ["Taipei"],
+    "year": 2024,
+    "photo": "/src/assets/photos/travel/taiwan_2024.png"
+  },
+  {
+    "country": "Japan",
+    "places": ["Osaka"],
+    "year": 2025,
+    "photo": "/src/assets/photos/travel/osaka_kyoto_2025.jpg"
+  },
+
+  {
+    "country": "Philippines",
+    "places": ["Sagada"],
+    "year": 2017,
+    "photo": "/src/assets/photos/travel/sagada_2017.jpg"
+  },
+  {
+    "country": "Philippines",
+    "places": ["El Nido"],
+    "year": 2020,
+    "photo": "/src/assets/photos/travel/palawan_2020.jpg"
+  },
+  {
+    "country": "Philippines",
+    "places": ["Boracay"],
+    "year": 2022,
+    "photo": "/src/assets/photos/travel/boracay_2022.jpg"
+  },
+  {
+    "country": "Philippines",
+    "places": ["Puerto Galera"],
+    "year": 2023,
+    "photo": "/src/assets/photos/travel/puerto_galera_2023.jpg"
+  },
+  {
+    "country": "Philippines",
+    "places": ["Cebu"],
+    "year": 2024,
+    "photo": "/src/assets/photos/travel/cebu_2024.jpg"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "pc": {
+    "title": "PC",
+    "specs": [
+      { "component": "CPU", "value": "AMD Ryzen 7 5700X" },
+      { "component": "GPU", "value": "AMD RX 7600 XT" },
+      { "component": "RAM", "value": "64GB" },
+      { "component": "Motherboard", "value": "B550" },
+      { "component": "PSU", "value": "750W" },
+      {
+        "component": "Storage",
+        "value": ["500GB NVMe SSD", "1TB SATA SSD", "2TB HDD"]
+      },
+      { "component": "OS", "value": "EndeavourOS" }
+    ],
+    "linkText": "Full parts list",
+    "linkUrl": "https://pcpartpicker.com/b/qTvfrH"
+  },
+  "homeServer": {
+    "title": "Home Server",
+    "specs": [
+      { "component": "CPU", "value": "Intel Celeron N5105" },
+      { "component": "GPU", "value": "Intel JasperLake [UHD Graphics]" },
+      { "component": "RAM", "value": "12GB" },
+      {
+        "component": "Storage",
+        "value": ["250GB NVMe SSD", "2TB SATA SSD"]
+      },
+      { "component": "OS", "value": "Ubuntu Server 24.04 LTS" }
+    ]
+  },
+  "storage": {
+    "title": "Direct Attached Storage",
+    "specs": [
+      { "type": "NAS HDD", "capacity": "1x 8TB", "usage": "Media Storage" }
+    ]
+  },
+  "laptop": {
+    "title": "Laptop",
+    "specs": [
+      { "component": "Model", "value": "MacBook Pro M2" },
+      { "component": "CPU", "value": "AMD Ryzen 7 5700U" },
+      { "component": "RAM", "value": "16GB" },
+      { "component": "Storage", "value": "250GB SSD" }
+    ]
+  }
+}
