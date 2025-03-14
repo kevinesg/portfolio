@@ -2,16 +2,16 @@
   {
     "place": "Sumaguing Cave",
     "year": 2017,
-    "photo": "/src/assets/photos/hiking/sumaguing_cave_2017.jpg"
+    "photo": "/assets/photos/hiking/sumaguing_cave_2017.jpg"
   },
   {
     "place": "Hulugan Falls",
     "year": 2019,
-    "photo": "/src/assets/photos/hiking/hulugan_falls_2019.jpg"
+    "photo": "/assets/photos/hiking/hulugan_falls_2019.jpg"
   },
   {
     "place": "Mt. Pinatubo",
     "year": 2024,
-    "photo": "/src/assets/photos/hiking/pinatubo_2024.jpg"
+    "photo": "/assets/photos/hiking/pinatubo_2024.jpg"
   }
 ]
