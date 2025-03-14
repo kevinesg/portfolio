@@ -1,0 +1,23 @@
+/* ImageCardCollection styling */
+.image-card-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  @media (max-width: 900px) {
+    .image-card-collection {
+        display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-items: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .image-card-collection {
+        display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-items: center;
+    }
+  }

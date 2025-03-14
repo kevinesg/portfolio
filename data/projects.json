@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "magandangbalita.net",
+    "description": "a newsletter website that posts one positive PH news every morning",
+    "link": "https://magandangbalita.net",
+    "tech": [
+      "Python",
+      "OpenAI API",
+      "React",
+      "TypeScript",
+      "Bootstrap",
+      "GitHub",
+      "Netlify"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "data pipelines",
+    "description": "ELT pipelines extracting data from various API sources and loading them to a data warehouse",
+    "link": "https://github.com/kevinesg/data-pipelines",
+    "tech": ["Python", "SQL (BigQuery)", "dbt", "Airflow", "GitHub"]
+  },
+  {
+    "id": 3,
+    "name": "kevinesg.com",
+    "description": "this portfolio website",
+    "link": "https://kevinesg.com",
+    "tech": ["React", "TypeScript", "GitHub", "Netlify"]
+  },
+  {
+    "id": 4,
+    "name": "Gen 1 Starters Pokedex",
+    "description": "real-time object detector Android mobile app that recognizes the first generation Pokemon starters",
+    "link": "https://github.com/kevinesg/gen1-starters-pokedex",
+    "tech": ["Python", "TensorFlow", "Android Studio", "GitHub"]
+  }
+]

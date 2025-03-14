@@ -1,0 +1,17 @@
+[
+  {
+    "event": "Pokemon Run",
+    "year": 2025,
+    "photo": "/src/assets/photos/running/pokemon_run_2025.jpg"
+  },
+  {
+    "event": "random UPD runs",
+    "year": 2025,
+    "photo": "/src/assets/photos/running/random_2025.jpg"
+  },
+  {
+    "event": "placeholder",
+    "year": 2025,
+    "photo": "/src/assets/photos/running/placeholder.jpg"
+  }
+]
