@@ -47,7 +47,7 @@
 }
 
 * {
-  font-family: "Ubuntu Mono";
+  font-family: "Ubuntu Mono", monospace;
 }
 
 .main-div {
