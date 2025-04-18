@@ -87,8 +87,20 @@
 
 .summaries-container {
   display: flex;
-  justify-content: space-between;
-  gap: 20px; /* Space between the cards */
+  gap: 1rem; /* Space between cards */
+  flex-wrap: wrap; /* Allows wrapping of cards */
+}
+
+.summaries-container .card {
+  flex: 1 1 calc(50% - 1rem); /* Each card takes up 50% width minus the gap */
+  min-width: 300px; /* Minimum width for each card */
+  max-width: 100%; /* Prevents cards from exceeding container width */
+}
+
+@media (max-width: 640px) {
+  .summaries-container .card {
+    flex: 1 1 100%; /* Cards take full width on smaller screens */
+  }
 }
 
 .summary {
@@ -150,6 +162,10 @@ a:hover {
 .custom-input:focus {
   border-color: var(--color-text-primary);
   outline: none;
+}
+
+.pc-setup {
+  padding-top: 50px;
 }
 
 

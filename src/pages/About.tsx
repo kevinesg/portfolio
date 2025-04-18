@@ -51,10 +51,23 @@ const About = () => {
 
         <div className="pc-setup">
           <h2>PC setup</h2>
-
+          <div>
+            <img src="/assets/photos/pc/setup_diagram.webp" alt="Setup Diagram" />
+          <div className="card">
+          <p>
+            The home server serves as the production environment for self-hosted data engineering projects, such as the data-pipelines project, running tools like Airflow, dbt, and custom scripts. It also functions as a media server (Jellyfin) and a storage server (Nextcloud), both accessible via Cloudflare Tunnel. Jellyfin allows family and friends to stream media remotely, while Nextcloud provides auto-sync for my phone and enables sharing of files and folders with view-only access.
+          </p>
+          <p>
+            The desktop PC is primarily used for web browsing, programming (as a development environment), work, and some gaming. It utilizes an Ubuntu VM for isolated development, with production environments hosted either on the home server or on cloud providers like Netlify and Render.
+          </p>
+          <p>
+            The laptop mirrors the desktop's functionality but is used when travelling or working outside the home. Both the desktop PC and laptop can securely access the home server from anywhere using Tailscale.
+          </p>
+          </div>
+          </div>
           {/* PC Specs */}
-          <img src="/src/assets/pc/pc.jpg" alt="PC" />
           <h3>{specs.pc.title}</h3>
+          <img src="/assets/photos/pc/pc.jpg" alt="PC" />
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -79,7 +92,7 @@ const About = () => {
 
           {/* Home Server */}
           <h3>{specs.homeServer.title}</h3>
-          <img src="/src/assets/pc/server.jpg" alt="Home Server" />
+          <img src="/assets/photos/pc/server.jpg" alt="Home Server" />
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -101,7 +114,7 @@ const About = () => {
 
           {/* Storage */}
           <h3>{specs.storage.title}</h3>
-          <img src="/src/assets/pc/das.jpg" alt="Direct Attached Storage" />
+          <img src="/assets/photos/pc/das.jpg" alt="Direct Attached Storage" />
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -125,7 +138,7 @@ const About = () => {
 
           {/* Laptop */}
           <h3>{specs.laptop.title}</h3>
-          <img src="/src/assets/pc/laptop.jpg" alt="laptop" />
+          <img src="/assets/photos/pc/laptop.jpg" alt="laptop" />
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
