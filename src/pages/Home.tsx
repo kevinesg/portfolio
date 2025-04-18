@@ -3,7 +3,6 @@ import projects from "../../data/projects.json";
 const Home = () => {
   return (
     <div className="container">
-      <h2 className="hide-me-too">hide me!</h2>
       <div className="card">
         <p>
           Hi, I'm Kevin. I started programming as a hobby and became interested

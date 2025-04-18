@@ -17,10 +17,12 @@ const Experience = () => {
               </div>
 
               <div className="exp-card-description">
+              <ul>
                 {exp.description.map((item, index) => (
                   <li key={`${exp.id}-desc-${index}`}>{item}</li>
                 ))}
                 <li>Tech used: {exp.tech.join(", ")}</li>
+                </ul>
               </div>
             </div>
           ))}
@@ -40,7 +42,7 @@ const Experience = () => {
           {[...projects].map((proj) => (
             <div key={proj.id}>
               <h3>
-                <a href={proj.link}>{proj.name}</a>
+                <a href={proj.link}  target="_blank" rel="noreferrer">{proj.name}</a>
               </h3>
               <ul>
                 <li>{proj.description}</li>
