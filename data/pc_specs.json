@@ -24,8 +24,9 @@
       { "component": "RAM", "value": "12GB" },
       {
         "component": "Storage",
-        "value": ["250GB NVMe SSD", "2TB SATA SSD"]
+        "value": "250GB NVMe SSD"
       },
+      { "component": "Storage", "value": "2TB SATA SSD" },
       { "component": "OS", "value": "Ubuntu Server 24.04 LTS" }
     ]
   },
