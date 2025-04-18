@@ -14,6 +14,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ imageSrc, location, year }) => {
         src={imageSrc}
         alt={`${location} (${year})`}
         className="image-card-img"
+        loading="lazy"
       />
       <div className="image-card-text">
         {location} ({year})
