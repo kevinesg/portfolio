@@ -3,49 +3,55 @@
     "country": "Japan",
     "places": ["Tokyo"],
     "year": 2023,
-    "photo": "/assets/photos/travel/tokyo_2023.jpg"
+    "photo": "/assets/photos/travel/tokyo_2023.webp"
   },
   {
     "country": "Taiwan",
     "places": ["Taipei"],
     "year": 2024,
-    "photo": "/assets/photos/travel/taiwan_2024.png"
+    "photo": "/assets/photos/travel/taipei_2024.webp"
+  },
+  {
+    "country": "Japan",
+    "places": ["Kyoto"],
+    "year": 2025,
+    "photo": "/assets/photos/travel/kyoto_2025.webp"
   },
   {
     "country": "Japan",
     "places": ["Osaka"],
     "year": 2025,
-    "photo": "/assets/photos/travel/osaka_kyoto_2025.jpg"
+    "photo": "/assets/photos/travel/osaka_2025.webp"
   },
 
   {
     "country": "Philippines",
     "places": ["Sagada"],
     "year": 2017,
-    "photo": "/assets/photos/travel/sagada_2017.jpg"
+    "photo": "/assets/photos/travel/sagada_2017.webp"
   },
   {
     "country": "Philippines",
     "places": ["El Nido"],
     "year": 2020,
-    "photo": "/assets/photos/travel/palawan_2020.jpg"
+    "photo": "/assets/photos/travel/palawan_2020.webp"
   },
   {
     "country": "Philippines",
     "places": ["Boracay"],
     "year": 2022,
-    "photo": "/assets/photos/travel/boracay_2022.jpg"
+    "photo": "/assets/photos/travel/boracay_2022.webp"
   },
   {
     "country": "Philippines",
     "places": ["Puerto Galera"],
     "year": 2023,
-    "photo": "/assets/photos/travel/puerto_galera_2023.jpg"
+    "photo": "/assets/photos/travel/puerto_galera_2023.webp"
   },
   {
     "country": "Philippines",
     "places": ["Cebu"],
     "year": 2024,
-    "photo": "/assets/photos/travel/cebu_2024.jpg"
+    "photo": "/assets/photos/travel/cebu_2024.webp"
   }
 ]
