@@ -4,13 +4,27 @@ const Home = () => {
   return (
     <div className="container">
       <div className="card">
+        <div className="bio"></div>
         <p>
-          Hi, I'm Kevin. I started programming as a hobby and became interested
-          in Machine Learning. This led me to learn Data Science, which
-          eventually helped me shift careers to become a Data Analyst. Later, I
-          discovered my interest in back-end work and transitioned to Data
-          Engineering. While I don't plan to pursue a Web Developer role, I've
-          recently started creating sites using React and TypeScript.
+          Hi, I'm Kevin 👋. I'm a Data Engineer with 3.5 years of work
+          experience in the data field.
+        </p>
+        <p>
+          I prioritize setting up the foundation for our data architecture, then
+          documenting the ETL/ELT data pipeline as well as the source of truth
+          as we go and update our codebase. I like working with stakeholders
+          directly to understand their needs and help them with their data
+          requirements.
+        </p>
+        <p>
+          I prefer using open-source tools and frameworks, but I also have
+          experience with cloud-based solutions like AWS and GCP. I tend to
+          avoid low-code/ no-code solutions, as I believe they can lead to
+          unnecessary complexity and vendor lock-in.
+        </p>
+        <p>
+          While I don't plan to pursue a Web Developer role, I've recently
+          started creating sites using React and TypeScript.
         </p>
         <p> Welcome to my portfolio! 🙂</p>
       </div>
