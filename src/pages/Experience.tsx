@@ -53,14 +53,6 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </div>{" "}
-      <div className="cv">
-        <h2>Get my CV</h2>
-        <p className="p-no-indent">
-          Drop your email to receive my CV in PDF format instantly! 😃
-        </p>
-        <p className="p-no-indent">[ NOT YET WORKING ]</p>
-        <input className="custom-input" type="email" placeholder="Your email" />
       </div>
     </>
   );

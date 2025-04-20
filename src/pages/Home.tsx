@@ -1,4 +1,5 @@
 import projects from "../../data/projects.json";
+import { ResumeDownload } from "../components/ResumeDownload";
 import "../style.css";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
           <h5 className="main-job">Data Engineer</h5>
           <h5 className="main-job loc">from PH 🇵🇭</h5>
           <div className="footer-right">
+            <ResumeDownload />
             <a href="mailto:kevinlloydesguerra@gmail.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
