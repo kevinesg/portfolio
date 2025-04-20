@@ -41,16 +41,6 @@
       "description": "Operating System"
     },
     {
-      "name": "conda",
-      "link": "https://skills-icons.vercel.app/api/icons?i=anaconda",
-      "description": "Package Manager"
-    },
-    {
-      "name": "VSCode",
-      "link": "https://skills-icons.vercel.app/api/icons?i=vscode",
-      "description": "Code Editor"
-    },
-    {
       "name": "Jira",
       "link": "https://skills-icons.vercel.app/api/icons?i=jira",
       "description": "Project Management"
@@ -58,29 +48,19 @@
   ],
   "hobbies": [
     {
-      "name": "HTML",
-      "link": "https://skills-icons.vercel.app/api/icons?i=html",
-      "description": "Markup Language"
-    },
-    {
-      "name": "CSS",
-      "link": "https://skills-icons.vercel.app/api/icons?i=css",
-      "description": "Style Sheet Language"
-    },
-    {
-      "name": "JavaScript",
-      "link": "https://skills-icons.vercel.app/api/icons?i=javascript",
-      "description": "TypeScript but worse"
-    },
-    {
       "name": "TypeScript",
       "link": "https://skills-icons.vercel.app/api/icons?i=typescript",
-      "description": "Programming Language"
+      "description": "Better JavaScript"
     },
     {
       "name": "React",
       "link": "https://skills-icons.vercel.app/api/icons?i=react",
       "description": "JavaScript Library"
+    },
+    {
+      "name": "FastAPI",
+      "link": "https://skills-icons.vercel.app/api/icons?i=fastapi",
+      "description": "Backend"
     },
     {
       "name": "npm",

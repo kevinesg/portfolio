@@ -78,6 +78,12 @@
   padding: 25px;
   border-radius: 10px;
   max-width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
 }
 
 .card > * {
@@ -88,6 +94,7 @@
   display: flex;
   gap: 1rem; /* Space between cards */
   flex-wrap: wrap; /* Allows wrapping of cards */
+  margin-bottom: 10px;
 }
 
 .summaries-container .card {
@@ -313,6 +320,10 @@ a:hover {
 
 .pc-setup a:hover {
   text-decoration: underline;
+}
+
+.games {
+  margin-bottom: 10px;
 }
 
 /* Footer styles */

@@ -150,17 +150,16 @@ const Home = () => {
         <h2>Tech Stack</h2>
         <ul className="tech-stack-list">
           {techstack.work.map((tech) => (
-            <li key={tech.name} className="tech-item">
+            <li key={tech.name} className="tech-item card">
               <img
                 src={tech.link}
                 alt={`${tech.name} logo`}
                 className="tech-logo"
+                loading="lazy"
               />
               <div className="tech-details">
                 <h3 className="tech-name">{tech.name}</h3>
-                <p className="tech-description p-no-indent">
-                  {tech.description}
-                </p>
+                <p className="tech-description">{tech.description}</p>
               </div>
             </li>
           ))}
@@ -170,11 +169,12 @@ const Home = () => {
         <h2>on the side</h2>
         <ul className="tech-stack-list">
           {techstack.hobbies.map((tech) => (
-            <li key={tech.name} className="tech-item">
+            <li key={tech.name} className="tech-item card">
               <img
                 src={tech.link}
                 alt={`${tech.name} logo`}
                 className="tech-logo"
+                loading="lazy"
               />
               <div className="tech-details">
                 <h3 className="tech-name">{tech.name}</h3>
