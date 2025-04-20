@@ -12,7 +12,6 @@
   --color-on-error: #ffffff;
   --color-text-secondary: #757575;
 
-
   --color-background: #f7f2f2;
   --color-card-background: #ffffff;
   --color-text-primary: #000000;
@@ -34,7 +33,6 @@
   --color-text-secondary: #b0b0b0;
   --color-border: #333333;
 
-
   --color-background: #121212;
   --color-card-background: #1f2937;
   --color-text-primary: #ffffff;
@@ -43,7 +41,9 @@
 :root {
   --padding-top: 100px; /* padding for navbar */
   --footer-height: 160px;
-  --container-min-height: calc(100vh - var(--padding-top) - var(--footer-height));
+  --container-min-height: calc(
+    100vh - var(--padding-top) - var(--footer-height)
+  );
 }
 
 * {
@@ -60,7 +60,6 @@
   border-top: 1px solid var(--color-background);
   border-bottom: 1px solid var(--color-background);
 }
-
 
 .container {
   display: flex;
@@ -120,6 +119,64 @@
   color: var(--color-background);
 }
 
+.bio {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--color-text-primary);
+}
+
+.bio-text > * {
+  margin: 0px;
+}
+
+.bio-pic {
+  position: relative;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%; /* Creates the circle */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+}
+
+.bio-pic:hover {
+  transform: scale(1.05);
+}
+
+.bio-pic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.main-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+.main-job {
+  color: var(--color-text-secondary);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.loc {
+  margin-bottom: 10px;
+}
+
 a {
   color: inherit; /* Inherit color from parent */
 }
@@ -168,7 +225,6 @@ a:hover {
   padding-top: 50px;
 }
 
-
 /* Styles for the pc-setup section */
 .pc-setup img {
   width: 100%;
@@ -182,7 +238,8 @@ a:hover {
   border-collapse: collapse;
 }
 
-.pc-setup th, .pc-setup td {
+.pc-setup th,
+.pc-setup td {
   padding: 10px;
   border: 1px solid var(--color-border);
   text-align: left;
@@ -198,12 +255,9 @@ a:hover {
   color: var(--color-text-primary);
 }
 
-
-
 .pc-setup a:hover {
   text-decoration: underline;
 }
-
 
 /* Footer styles */
 .footer {
@@ -234,7 +288,6 @@ a:hover {
   text-indent: 0;
 }
 
-
 body {
   background-color: var(--color-background);
   color: var(--color-text-primary);
@@ -249,8 +302,6 @@ div {
   color: var(--color-text-primary);
 }
 
-
-
 .blur-fade-area {
   position: fixed;
   top: 0;
@@ -258,11 +309,11 @@ div {
   width: 100%;
   height: 120px; /* Match your margin-top */
   z-index: 50; /* Below your navbar but above content */
-  
+
   /* Blur effect */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  
+
   /* Gradient fade effect */
   background: linear-gradient(
     to bottom,
@@ -270,17 +321,14 @@ div {
     rgba(255, 255, 255, 0.4) 70%,
     rgba(255, 255, 255, 0) 100%
   );
-  
+
   pointer-events: none; /* Allows clicking through this element */
 }
-
-
 
 p {
   text-indent: 50px;
   text-align: justify;
 }
-
 
 .dock-navbar {
   position: fixed;
@@ -337,7 +385,6 @@ p {
   background-color: var(--color-primary-variant);
   color: var(--color-on-primary);
 }
-
 
 /* Toggle button position */
 .mode-toggle {
