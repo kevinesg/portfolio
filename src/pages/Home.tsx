@@ -82,10 +82,16 @@ const Home = () => {
         </div>
         <div className="bio-pic">
           <img
+            className="bio-pic-img default"
             src="/assets/photos/home/profile-pic.webp"
             alt="profile picture"
             loading="lazy"
-            className="bio-pic-img"
+          />
+          <img
+            className="bio-pic-img hover"
+            src="/assets/photos/home/profile-pic-hover.webp"
+            alt="hover profile picture"
+            loading="lazy"
           />
         </div>
       </div>
