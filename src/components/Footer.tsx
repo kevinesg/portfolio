@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <p className="p-no-indent">© 2025 / kevinesg / made with React+TS </p>
       </div>
       <div className="footer-right">
-        <a href="mailto:kevinesg.dev@gmail.com">
+        <a href="mailto:kevinlloydesguerra@gmail.com">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
