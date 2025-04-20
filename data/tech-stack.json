@@ -1,0 +1,101 @@
+{
+  "work": [
+    {
+      "name": "Python",
+      "link": "https://skills-icons.vercel.app/api/icons?i=python",
+      "description": "Programming Language"
+    },
+    {
+      "name": "SQL",
+      "link": "https://skills-icons.vercel.app/api/icons?i=postgresql",
+      "description": "Database Language"
+    },
+    {
+      "name": "Airflow",
+      "link": "https://skills-icons.vercel.app/api/icons?i=airflow",
+      "description": "Orchestration"
+    },
+    {
+      "name": "dbt",
+      "link": "https://skills-icons.vercel.app/api/icons?i=dbt",
+      "description": "Data Transformation"
+    },
+    {
+      "name": "GCP",
+      "link": "https://skills-icons.vercel.app/api/icons?i=gcp",
+      "description": "Cloud Platform"
+    },
+    {
+      "name": "AWS",
+      "link": "https://skills-icons.vercel.app/api/icons?i=aws",
+      "description": "Cloud Platform"
+    },
+    {
+      "name": "Git",
+      "link": "https://skills-icons.vercel.app/api/icons?i=git",
+      "description": "Version Control"
+    },
+    {
+      "name": "Linux",
+      "link": "https://skills-icons.vercel.app/api/icons?i=linux",
+      "description": "Operating System"
+    },
+    {
+      "name": "conda",
+      "link": "https://skills-icons.vercel.app/api/icons?i=anaconda",
+      "description": "Package Manager"
+    },
+    {
+      "name": "VSCode",
+      "link": "https://skills-icons.vercel.app/api/icons?i=vscode",
+      "description": "Code Editor"
+    },
+    {
+      "name": "Jira",
+      "link": "https://skills-icons.vercel.app/api/icons?i=jira",
+      "description": "Project Management"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "HTML",
+      "link": "https://skills-icons.vercel.app/api/icons?i=html",
+      "description": "Markup Language"
+    },
+    {
+      "name": "CSS",
+      "link": "https://skills-icons.vercel.app/api/icons?i=css",
+      "description": "Style Sheet Language"
+    },
+    {
+      "name": "JavaScript",
+      "link": "https://skills-icons.vercel.app/api/icons?i=javascript",
+      "description": "TypeScript but worse"
+    },
+    {
+      "name": "TypeScript",
+      "link": "https://skills-icons.vercel.app/api/icons?i=typescript",
+      "description": "Programming Language"
+    },
+    {
+      "name": "React",
+      "link": "https://skills-icons.vercel.app/api/icons?i=react",
+      "description": "JavaScript Library"
+    },
+    {
+      "name": "npm",
+      "link": "https://skills-icons.vercel.app/api/icons?i=npm",
+      "description": "Package Manager"
+    },
+    {
+      "name": "Netlify",
+      "link": "https://skills-icons.vercel.app/api/icons?i=netlify",
+      "description": "Frontend Hosting"
+    },
+    {
+      "name": "Render",
+      "link": "https://skills-icons.vercel.app/api/icons?i=render",
+      "description": "Backend Hosting"
+    }
+  ]
+}
