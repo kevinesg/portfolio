@@ -1,5 +1,6 @@
 import projects from "../../data/projects.json";
 import { ResumeDownload } from "../components/ResumeDownload";
+import techstack from "../../data/tech-stack.json";
 import "../style.css";
 
 const Home = () => {
@@ -144,6 +145,44 @@ const Home = () => {
             content :)
           </p>
         </div>
+      </div>
+      <div className="tech-stack">
+        <h2>Tech Stack</h2>
+        <ul className="tech-stack-list">
+          {techstack.work.map((tech) => (
+            <li key={tech.name} className="tech-item">
+              <img
+                src={tech.link}
+                alt={`${tech.name} logo`}
+                className="tech-logo"
+              />
+              <div className="tech-details">
+                <h3 className="tech-name">{tech.name}</h3>
+                <p className="tech-description p-no-indent">
+                  {tech.description}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="tech-stack">
+        <h2>on the side</h2>
+        <ul className="tech-stack-list">
+          {techstack.hobbies.map((tech) => (
+            <li key={tech.name} className="tech-item">
+              <img
+                src={tech.link}
+                alt={`${tech.name} logo`}
+                className="tech-logo"
+              />
+              <div className="tech-details">
+                <h3 className="tech-name">{tech.name}</h3>
+                <p className="tech-description">{tech.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
