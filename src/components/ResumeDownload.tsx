@@ -4,7 +4,6 @@ export const ResumeDownload: React.FC = () => (
   <a
     href="/assets/files/Kevin-Esguerra-resume.pdf"
     download="Kevin-Esguerra-resume.pdf"
-    aria-label="Download my resume"
     title="Download my resume"
     style={{ display: "inline-flex", gap: 4 }}
   >

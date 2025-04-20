@@ -8,7 +8,12 @@ const Footer: React.FC = () => {
         <p className="p-no-indent">© 2025 / kevinesg / made with React+TS </p>
       </div>
       <div className="footer-right">
-        <a href="mailto:kevinlloydesguerra@gmail.com">
+        <a
+          href="mailto:kevinlloydesguerra@gmail.com"
+          title="Email me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -26,6 +31,7 @@ const Footer: React.FC = () => {
         </a>
         <a
           href="https://linkedin.com/in/kevinesg"
+          title="LinkedIn profile"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -49,6 +55,7 @@ const Footer: React.FC = () => {
         </a>
         <a
           href="https://github.com/kevinesg"
+          title="GitHub profile"
           target="_blank"
           rel="noopener noreferrer"
         >
