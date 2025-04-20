@@ -81,27 +81,15 @@ const Home = () => {
       </div>
       <div className="card">
         <p>
-          Hi, I'm Kevin 👋. I'm a Data Engineer with 3.5 years of work
-          experience in the data field.
+          Hi, I'm Kevin 👋, a Data Engineer with 3.5 years of experience. I
+          build and document ETL/ELT pipelines, architect data foundations, and
+          partner with stakeholders to turn questions into insights.
         </p>
         <p>
-          I prioritize setting up the foundation for our data architecture, then
-          documenting the ETL/ELT data pipeline as well as the source of truth
-          as we go and update our codebase. I like working with stakeholders
-          directly to understand their needs and help them with their data
-          requirements.
+          I favor open-source tools (but have used AWS/GCP) and am dabbling in
+          React + TypeScript on the side.
         </p>
-        <p>
-          I prefer using open-source tools and frameworks, but I also have
-          experience with cloud-based solutions like AWS and GCP. I tend to
-          avoid low-code/ no-code solutions, as I believe they can lead to
-          unnecessary complexity and vendor lock-in.
-        </p>
-        <p>
-          While I don't plan to pursue a Web Developer role, I've recently
-          started creating sites using React and TypeScript.
-        </p>
-        <p> Welcome to my portfolio! 🙂</p>
+        <p>Welcome to my portfolio!</p>
       </div>
       <div className="summaries-container">
         <div className="card summary">
