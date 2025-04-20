@@ -162,10 +162,28 @@
 }
 
 .bio-pic-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  /* Fix the transition syntax - separate multiple transitions with commas */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Default state */
+.bio-pic-img.hover {
+  opacity: 0;
+}
+
+/* Hover state - target the container hover to affect children */
+.bio-pic:hover .bio-pic-img.default {
+  opacity: 0;
+}
+
+.bio-pic:hover .bio-pic-img.hover {
+  opacity: 1;
 }
 
 .main-name {
