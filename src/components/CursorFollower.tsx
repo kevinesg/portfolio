@@ -1,12 +1,10 @@
 import React, { useEffect, useRef } from "react";
 
 export const CursorFollower: React.FC = () => {
-  // 1. Ref for the latest cursor position
   const cursorRef = useRef({
     x: window.innerWidth / 2,
     y: window.innerHeight / 2,
   });
-  // 2. Ref for Pikachu's current position
   const posRef = useRef({
     x: window.innerWidth / 2,
     y: window.innerHeight / 2,
@@ -21,7 +19,7 @@ export const CursorFollower: React.FC = () => {
     window.addEventListener("mousemove", onMouseMove);
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
-      if (frameRef.current) cancelAnimationFrame(frameRef.current);
+      cancelAnimationFrame(frameRef.current);
     };
   }, []);
 
@@ -30,18 +28,33 @@ export const CursorFollower: React.FC = () => {
     if (!el) return;
 
     const animate = () => {
-      // 3. Easing toward the updated cursorRef.current
+      // ease toward the cursor…
       posRef.current.x += (cursorRef.current.x - posRef.current.x) * 0.1;
       posRef.current.y += (cursorRef.current.y - posRef.current.y) * 0.1;
 
-      el.style.transform = `translate(${posRef.current.x}px, ${posRef.current.y}px)`;
+      // figure out which way we’re facing
+      const deltaX = cursorRef.current.x - posRef.current.x;
+      const direction = deltaX >= 0 ? 1 : -1;
+
+      // 👉 dynamically compute “half‐width” so head lines up
+      const width = el.clientWidth;
+      const offset =
+        direction === 1
+          ? width // when facing right, head is already at cursor
+          : 0; // when facing left, head is offset by its width
+      const sideX = direction === 1 ? -offset : offset;
+
+      // apply both translate and flip
+      el.style.transform = `
+          translate(${posRef.current.x + sideX}px, ${posRef.current.y}px)
+          scaleX(${direction})
+        `;
 
       frameRef.current = requestAnimationFrame(animate);
     };
 
-    // kick off the loop ONCE
     animate();
-  }, []); // ← no [cursor] here
+  }, []);
 
   return (
     <img
@@ -53,10 +66,9 @@ export const CursorFollower: React.FC = () => {
         top: 0,
         left: 0,
         width: "80px",
-        height: "auto",
         pointerEvents: "none",
         zIndex: 9999,
-        transform: "translate(-100px, -100px)",
+        // no initial transform needed—animation sets it
       }}
     />
   );
