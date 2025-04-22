@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import { CursorFollower } from "./components/CursorFollower";
 
 declare global {
   interface Window {
@@ -52,6 +53,7 @@ const MainRouter: React.FC = () => {
       <div className="main-div">
         <CssBaseline />
         <Router>
+          <CursorFollower />
           <Analytics />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <Routes>
