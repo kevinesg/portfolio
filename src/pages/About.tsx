@@ -37,20 +37,20 @@ const About = () => {
     <>
       <div className="about-container">
         <div className="hobbies">
-          <h2>Travel</h2>
+          <h2>Travel ✈️</h2>
           <ImageCardCollection cards={travelCards} />
         </div>
         <div className="hobbies">
-          <h2>Hiking</h2>
+          <h2>Hiking 🥾</h2>
           <ImageCardCollection cards={hikingCards} />
         </div>
         <div className="hobbies">
-          <h2>Running</h2>
+          <h2>Running 🏃🏻‍➡️</h2>
           <ImageCardCollection cards={runningCards} />
         </div>
 
         <div className="pc-setup">
-          <h2>PC setup</h2>
+          <h2>PC setup 🖧</h2>
           <div>
             <img
               src="/assets/photos/pc/setup_diagram.webp"
@@ -83,7 +83,7 @@ const About = () => {
             </div>
           </div>
           {/* PC Specs */}
-          <h3>{specs.pc.title}</h3>
+          <h3>{specs.pc.title} 🖳</h3>
           <img src="/assets/photos/pc/pc.webp" alt="PC" />
           <TableContainer component={Paper}>
             <Table>
@@ -108,7 +108,7 @@ const About = () => {
           </a>
 
           {/* Home Server */}
-          <h3>{specs.homeServer.title}</h3>
+          <h3>{specs.homeServer.title} 🗄️</h3>
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -129,7 +129,7 @@ const About = () => {
           </TableContainer>
 
           {/* Storage */}
-          <h3>{specs.storage.title}</h3>
+          <h3>{specs.storage.title} 📦</h3>
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -152,7 +152,7 @@ const About = () => {
           </TableContainer>
 
           {/* Laptop */}
-          <h3>{specs.laptop.title}</h3>
+          <h3>{specs.laptop.title} 💻</h3>
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -173,7 +173,7 @@ const About = () => {
           </TableContainer>
         </div>
         <div className="games">
-          <h2>games</h2>
+          <h2>games 🎮</h2>
           <div className="card">
             <ul>
               <li>Dota 2</li>

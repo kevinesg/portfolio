@@ -480,3 +480,36 @@ p {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
 }
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between project cards */
+  margin-bottom: 20px;
+}
+
+.exp-card-company-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between company section and details */
+}
+
+.exp-card-company-details > *, .exp-card-description > * {
+  background-color: var(--color-card-background);
+}
+
+.exp-card-company-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 1rem; /* Space between logo and details */
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+.work {
+  display: flex;
+  align-items: flex-start;
+}
