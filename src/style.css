@@ -480,3 +480,12 @@ p {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
 }
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between project cards */
+  margin-bottom: 20px;
+}

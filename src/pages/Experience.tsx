@@ -1,5 +1,7 @@
 import work_exp from "../../data/work-experience.json";
 import projects from "../../data/projects.json";
+import ProjectCard from "../components/ProjectCard";
+import "../style.css";
 
 const Experience = () => {
   return (
@@ -38,20 +40,20 @@ const Experience = () => {
       </div>
       <div className="projects">
         <h2>Projects</h2>
-        <div className="card">
-          {[...projects].map((proj) => (
-            <div key={proj.id}>
-              <h3>
-                <a href={proj.link} target="_blank" rel="noreferrer">
-                  {proj.name}
-                </a>
-              </h3>
-              <ul>
-                <li>{proj.description}</li>
-                <li>Tech used: {proj.tech.join(", ")}</li>
-              </ul>
-            </div>
-          ))}
+        <div className="projects-container">
+          {[...projects]
+            .sort((a) => a.id)
+            .map((project) => (
+              <ProjectCard
+                id={project.id}
+                key={project.id}
+                img={project.img}
+                url={project.url}
+                name={project.name}
+                description={project.description}
+                tech={project.tech}
+              />
+            ))}
         </div>
       </div>
     </>

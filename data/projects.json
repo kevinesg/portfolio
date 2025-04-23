@@ -1,38 +1,42 @@
 [
   {
     "id": 1,
+    "img": "/assets/photos/experience/project/project-magandang-balita.webp",
     "name": "magandangbalita.net",
     "description": "a newsletter website that posts one positive PH news every morning",
-    "link": "https://magandangbalita.net",
-    "tech": [
-      "Python",
-      "OpenAI API",
-      "React",
-      "TypeScript",
-      "Bootstrap",
-      "GitHub",
-      "Netlify"
-    ]
+    "url": "https://magandangbalita.net",
+    "tech": ["Python", "TypeScript", "React", "Bootstrap", "Netlify"]
   },
   {
     "id": 2,
+    "img": "/assets/photos/experience/project/project-data-pipelines.webp",
     "name": "data pipelines",
     "description": "ELT pipelines extracting data from various API sources and loading them to a data warehouse",
-    "link": "https://github.com/kevinesg/data-pipelines",
-    "tech": ["Python", "SQL (BigQuery)", "dbt", "Airflow", "GitHub"]
+    "url": "https://github.com/kevinesg/data-pipelines",
+    "tech": [
+      "Python",
+      "PostgreSQL",
+      "dbt",
+      "Airflow",
+      "GCP",
+      "Linux",
+      "Cloudflare"
+    ]
   },
   {
     "id": 3,
+    "img": "/assets/photos/experience/project/project-kevinesg.webp",
     "name": "kevinesg.com",
     "description": "this portfolio website",
-    "link": "https://kevinesg.com",
-    "tech": ["React", "TypeScript", "GitHub", "Netlify"]
+    "url": "https://kevinesg.com",
+    "tech": ["TypeScript", "React", "Netlify"]
   },
   {
     "id": 4,
+    "img": "/assets/photos/experience/project/project-gen1-starters-pokedex.webp",
     "name": "Gen 1 Starters Pokedex",
     "description": "real-time object detector Android mobile app that recognizes the first generation Pokemon starters",
-    "link": "https://github.com/kevinesg/gen1-starters-pokedex",
-    "tech": ["Python", "TensorFlow", "Android Studio", "GitHub"]
+    "url": "https://github.com/kevinesg/gen1-starters-pokedex",
+    "tech": ["Python", "TensorFlow", "AndroidStudio"]
   }
 ]
