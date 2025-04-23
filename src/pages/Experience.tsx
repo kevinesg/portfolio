@@ -62,11 +62,25 @@ const Experience = () => {
       </div>
       <div className="educ-container">
         <h2>Education</h2>
-        <div className="card">
-          <h3>University of the Philippines Los Baños</h3>
-          <ul>
-            <li>BS in Civil Engineering (2012 - 2017)</li>
-          </ul>
+        <div className="card work">
+          <a
+            href={"https://uplb.edu.ph/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={"University of the Philippines Los Baños"}
+          >
+            <img
+              src="/assets/photos/experience/education/education-logo-uplb.webp"
+              alt="University of the Philippines Los Baños"
+              className="exp-card-company-logo"
+            />
+          </a>
+          <div>
+            <h3>University of the Philippines Los Baños</h3>
+            <ul>
+              <li>BS in Civil Engineering (2012 - 2017)</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="projects">
