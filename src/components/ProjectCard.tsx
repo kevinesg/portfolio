@@ -39,6 +39,7 @@ const Card: React.FC<ProjectCardProps> = ({
               alt={tool}
               title={tool}
               key={id}
+              loading="lazy"
             />
           ))}
         </div>

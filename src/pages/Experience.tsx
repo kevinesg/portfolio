@@ -11,20 +11,51 @@ const Experience = () => {
         {[...work_exp]
           .sort((a, b) => b.id - a.id)
           .map((exp) => (
-            <div className="card" key={exp.id}>
-              <h3>{exp.position}</h3>
-              <div className="exp-card-company">{exp.company}</div>
-              <div className="exp-card-date">
-                {exp.startDate} - {exp.endDate || "Present"}
-              </div>
-
-              <div className="exp-card-description">
-                <ul>
-                  {exp.description.map((item, index) => (
-                    <li key={`${exp.id}-desc-${index}`}>{item}</li>
-                  ))}
-                  <li>Tech used: {exp.tech.join(", ")}</li>
-                </ul>
+            <div className="card work" key={exp.id}>
+              {" "}
+              <a
+                href={exp.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={exp.company}
+              >
+                <img
+                  src={exp.logo}
+                  alt={exp.company}
+                  className="exp-card-company-logo"
+                />
+              </a>
+              <div>
+                <h3>{exp.position}</h3>
+                <div className="exp-card-company-details">
+                  <div className="exp-card-company">{exp.company}</div>
+                  <div className="exp-card-date">
+                    {exp.startDate} - {exp.endDate || "Present"}
+                  </div>
+                </div>
+                <div className="exp-card-description">
+                  <ul>
+                    {exp.description.map((item, index) => (
+                      <li key={`${exp.id}-desc-${index}`}>{item}</li>
+                    ))}
+                    <li>
+                      {" "}
+                      {[...exp.tech].map((tool) => (
+                        <img
+                          src={
+                            "https://skills-icons.vercel.app/api/icons?i=" +
+                            tool.toLowerCase()
+                          }
+                          className="project-tech"
+                          alt={tool}
+                          title={tool}
+                          key={tool}
+                          loading="lazy"
+                        />
+                      ))}
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           ))}
