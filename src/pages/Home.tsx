@@ -109,22 +109,22 @@ const Home = () => {
       </div>
       <div className="summaries-container">
         <div className="card summary">
-          <h2>Work Experience</h2>
+          <h2>Work Experience 💼</h2>
           <ul>
             <li>Data Engineer (2024 - Present)</li>
             <li>Data Analyst (2021 - 2024)</li>
           </ul>
-          <h2>Education</h2>
+          <h2>Education 📚</h2>
           <ul>
             <li>BS Civil Engineering (2012 - 2017)</li>
           </ul>
         </div>
         <div className="card summary">
-          <h2>Projects</h2>
+          <h2>Projects 🛠️</h2>
           <ul>
             {[...projects].map((proj) => (
               <li key={proj.id}>
-                <a href={proj.link} target="_blank" rel="noreferrer">
+                <a href={proj.url} target="_blank" rel="noreferrer">
                   {proj.name} {""}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,7 @@ const Home = () => {
         </div>
       </div>
       <div className="tech-stack">
-        <h2>Tech Stack</h2>
+        <h2>Tech Stack ⚙️</h2>
         <ul className="tech-stack-list">
           {techstack.work.map((tech) => (
             <li key={tech.name} className="tech-item card">

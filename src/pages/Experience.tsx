@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <>
       <div className="exp-container">
-        <h2>Work Experience</h2>
+        <h2>Work Experience 💼</h2>
         {[...work_exp]
           .sort((a, b) => b.id - a.id)
           .map((exp) => (
@@ -61,7 +61,7 @@ const Experience = () => {
           ))}
       </div>
       <div className="educ-container">
-        <h2>Education</h2>
+        <h2>Education 📚</h2>
         <div className="card work">
           <a
             href={"https://uplb.edu.ph/"}
@@ -84,7 +84,7 @@ const Experience = () => {
         </div>
       </div>
       <div className="projects">
-        <h2>Projects</h2>
+        <h2>Projects 🛠️</h2>
         <div className="projects-container">
           {[...projects]
             .sort((a) => a.id)
