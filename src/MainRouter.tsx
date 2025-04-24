@@ -5,6 +5,7 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+import { ScrollToTop } from "./components/ScrollToTop";
 import CssBaseline from "@mui/material/CssBaseline";
 import "./style.css";
 import Navbar from "./components/Navbar";
@@ -57,6 +58,7 @@ const MainRouter: React.FC = () => {
       <div className="main-div">
         <CssBaseline />
         <Router>
+          <ScrollToTop />
           {isRunning && <CursorFollower />}
           <Analytics />
           <Navbar
