@@ -97,15 +97,15 @@ const Home = () => {
       </div>
       <div className="card">
         <p>
-          Hi, I'm Kevin 👋, a Data Engineer with 3.5 years of experience. I
-          build and document ETL/ELT pipelines, architect data foundations, and
-          partner with stakeholders to turn questions into insights.
+          Hi 👋 I'm Kevin, a Data Engineer with 3.5 years of related work
+          experience. I build and document ETL/ELT pipelines, architect data
+          foundations, and partner with stakeholders to turn questions into
+          insights.
         </p>
         <p>
-          I favor open-source tools (but have used AWS/GCP) and am dabbling in
-          React + TypeScript on the side.
+          I favor free and open-source tools and am dabbling in web development
+          for fun 😃
         </p>
-        <p>Welcome to my portfolio!</p>
       </div>
       <div className="summaries-container">
         <div className="card summary">
