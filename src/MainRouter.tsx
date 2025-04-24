@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import CssBaseline from "@mui/material/CssBaseline";
 import "./style.css";
@@ -14,28 +9,6 @@ import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import { CursorFollower } from "./components/CursorFollower";
-
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void;
-  }
-}
-// Analytics Component to track page views
-const Analytics = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (
-      typeof window !== "undefined" &&
-      window.gtag &&
-      window.location.hostname !== "localhost"
-    ) {
-      window.gtag("config", "G-RKM6CL9139", { page_path: location.pathname });
-    }
-  }, [location]);
-
-  return null;
-};
 
 const MainRouter: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -60,7 +33,6 @@ const MainRouter: React.FC = () => {
         <Router>
           <ScrollToTop />
           {isRunning && <CursorFollower />}
-          <Analytics />
           <Navbar
             darkMode={darkMode}
             toggleDarkMode={toggleDarkMode}
