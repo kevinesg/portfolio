@@ -61,21 +61,6 @@
       "name": "FastAPI",
       "link": "https://skills-icons.vercel.app/api/icons?i=fastapi",
       "description": "Backend"
-    },
-    {
-      "name": "npm",
-      "link": "https://skills-icons.vercel.app/api/icons?i=npm",
-      "description": "Package Manager"
-    },
-    {
-      "name": "Netlify",
-      "link": "https://skills-icons.vercel.app/api/icons?i=netlify",
-      "description": "Frontend Hosting"
-    },
-    {
-      "name": "Render",
-      "link": "https://skills-icons.vercel.app/api/icons?i=render",
-      "description": "Backend Hosting"
     }
   ]
 }
