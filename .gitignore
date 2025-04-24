@@ -30,3 +30,5 @@ dist-ssr/
 node_modules/.tmp/
 
 .vite/
+
+package-lock.json
