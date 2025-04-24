@@ -38,6 +38,7 @@ const Analytics = () => {
 
 const MainRouter: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [isRunning, setIsRunning] = useState(true);
 
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode);
@@ -48,14 +49,22 @@ const MainRouter: React.FC = () => {
     setDarkMode(!darkMode);
   };
 
+  const togglePika = () => {
+    setIsRunning(!isRunning);
+  };
   return (
     <>
       <div className="main-div">
         <CssBaseline />
         <Router>
-          <CursorFollower />
+          {isRunning && <CursorFollower />}
           <Analytics />
-          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <Navbar
+            darkMode={darkMode}
+            toggleDarkMode={toggleDarkMode}
+            isRunning={isRunning}
+            togglePika={togglePika}
+          />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<Experience />} />

@@ -1,10 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import MaterialUISwitch from "./MaterialUISwitch";
 import NavbarProps from "../interface/NavbarProps";
+import { ThemeIcon } from "./ThemeIcon";
+import { PikachuToggle } from "./PikachuToggle";
 
-const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
+const Navbar: React.FC<NavbarProps> = ({
+  darkMode,
+  toggleDarkMode,
+  isRunning,
+  togglePika,
+}) => {
   return (
     <nav className="dock-navbar">
       <ul className="dock-list">
@@ -65,12 +70,10 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
           </NavLink>
         </li>
         <li className="dock-item mode-toggle">
-          <FormControlLabel
-            control={
-              <MaterialUISwitch checked={darkMode} onChange={toggleDarkMode} />
-            }
-            label=""
-          />
+          <ThemeIcon darkMode={darkMode} onClick={toggleDarkMode} />
+        </li>
+        <li className="dock-item ">
+          <PikachuToggle isRunning={isRunning} onClick={togglePika} />
         </li>
       </ul>
     </nav>
