@@ -1,0 +1,17 @@
+# 1) Allow all crawlers everywhere
+User-agent: *
+Allow: /
+
+# 2) Disallow all crawling (private site)
+# User-agent: *
+# Disallow: /
+
+# 3) Block a specific bot, allow the rest
+# User-agent: BadBot
+# Disallow: /
+
+# 4) Point to your XML sitemap
+Sitemap: https://kevinesg.com/sitemap.xml
+
+# 5) Crawl-delay example (in seconds)
+# Crawl-delay: 10
