@@ -10,7 +10,6 @@ interface ProjectCardProps {
 }
 
 const Card: React.FC<ProjectCardProps> = ({
-  id,
   img,
   url,
   name,
