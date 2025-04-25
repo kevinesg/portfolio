@@ -21,11 +21,11 @@ export const BoltOnIcon = ({
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     width={width}
     height={height}
-    stroke-width="2"
+    strokeWidth="2"
   >
     <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"></path>
   </svg>
@@ -42,11 +42,11 @@ export const BoltOffIcon = ({
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     width={width}
     height={height}
-    stroke-width="2"
+    strokeWidth="2"
   >
     <path d="M3 3l18 18"></path>
     <path d="M15.212 15.21l-4.212 5.79v-7h-6l3.79 -5.21m1.685 -2.32l2.525 -3.47v6m1 1h5l-2.104 2.893"></path>
