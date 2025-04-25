@@ -38,7 +38,7 @@ const Card: React.FC<ProjectCardProps> = ({
               className="project-tech"
               alt={tool}
               title={tool}
-              key={id}
+              key={tool}
               loading="lazy"
             />
           ))}

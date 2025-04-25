@@ -9,8 +9,8 @@ const Home = () => {
       <div className="bio">
         <div className="bio-text">
           <h1 className="main-name">Kevin Esguerra</h1>
-          <h5 className="main-job">Data Engineer</h5>
-          <h5 className="main-job loc">from PH 🇵🇭</h5>
+          <h5 className="main-job">Data Engineer from PH 🇵🇭</h5>
+          <h5 className="main-job loc">salted caramel enthusiast 🧋</h5>
           <div className="footer-right">
             <ResumeDownload />
             <a
@@ -24,11 +24,11 @@ const Home = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 width="32"
                 height="32"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
                 <path d="M3 7l9 6l9 -6"></path>
@@ -45,11 +45,11 @@ const Home = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 width="32"
                 height="32"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
                 <path d="M8 11l0 5"></path>
@@ -69,11 +69,11 @@ const Home = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 width="32"
                 height="32"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
               </svg>
@@ -131,11 +131,11 @@ const Home = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     width="13"
                     height="13"
-                    stroke-width="2"
+                    strokeWidth="2"
                   >
                     <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
                     <path d="M11 13l9 -9"></path>
