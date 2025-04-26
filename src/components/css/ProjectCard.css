@@ -1,6 +1,6 @@
 .project-card {
     width: auto;
-    max-width: 350px;
+    max-width: 365px;
     aspect-ratio: 3/3.5;
     margin-bottom: 1.5rem;
     border-radius: 8px;
@@ -12,6 +12,7 @@
 
 .project-card > * {
     background-color: var(--color-card-background);
+    width: 100%;
 }
 
 .project-url {
