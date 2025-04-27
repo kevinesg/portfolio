@@ -432,7 +432,7 @@ p {
 
 /* Dark mode dock styling */
 .dark-mode .dock-list {
-  background-color: rgba(40, 40, 40, 0.7);
+  background-color: var(--color-card-background);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -531,6 +531,22 @@ p {
 
 .pre {
   white-space: pre;
+}
+
+.light-mode .json-key {
+  color: #000000;
+}
+
+.light-mode .json-value {
+  color: #000000;
+}
+
+.light-mode .json-braces {
+  color: #000000;
+}
+
+.light-mode .json-bracket {
+  color: #000000;
 }
 
 .game-icon {
