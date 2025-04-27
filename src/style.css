@@ -511,3 +511,24 @@ p {
   display: flex;
   align-items: flex-start;
 }
+
+
+.json-key {
+  color: #9cdcfe;
+}
+
+.json-value {
+  color: #ce9178;
+}
+
+.json-braces {
+  color: #ffd700;
+}
+
+.json-bracket {
+  color: #da70d6;
+}
+
+.pre {
+  white-space: pre;
+}
