@@ -233,34 +233,52 @@ const About = () => {
         <div className="games">
           <h2>games 🎮</h2>
           <div className="card">
-            <ul>
-              <li>Dota 2</li>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.dotabuff.com/players/317389712"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Dotabuff profile
-                  </a>
-                </li>
-                <li>6088 MMR</li>
-              </ul>
-              <li>Chess</li>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.chess.com/member/kevinesg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    chess.com profile
-                  </a>
-                </li>
-                <li>1876 ELO (rapid)</li>
-              </ul>
-            </ul>
+            <div className="game-div">
+              <img
+                src="/assets/photos/games/dota2.webp"
+                alt="Dota 2"
+                title="Dota 2"
+                className="game-icon"
+              />
+              <div className="game-info">
+                <h3>Dota 2</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.dotabuff.com/players/317389712"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Dotabuff profile
+                    </a>
+                  </li>
+                  <li>6088 MMR</li>
+                </ul>
+              </div>
+            </div>
+            <div className="game-div">
+              <img
+                src="/assets/photos/games/chess.webp"
+                alt="Chess"
+                title="Chess"
+                className="game-icon"
+              />
+              <div className="game-info">
+                <h3>Chess</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.chess.com/member/kevinesg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      chess.com profile
+                    </a>
+                  </li>
+                  <li>1876 ELO (rapid)</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
