@@ -34,16 +34,6 @@
       "name": "Git",
       "link": "https://skills-icons.vercel.app/api/icons?i=git",
       "description": "Version Control"
-    },
-    {
-      "name": "Linux",
-      "link": "https://skills-icons.vercel.app/api/icons?i=linux",
-      "description": "Operating System"
-    },
-    {
-      "name": "Jira",
-      "link": "https://skills-icons.vercel.app/api/icons?i=jira",
-      "description": "Project Management"
     }
   ],
   "hobbies": [
