@@ -155,4 +155,5 @@
   body {
     @apply bg-background text-foreground;
   }
+  body { font-family: "Ubuntu Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
 }
