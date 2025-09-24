@@ -110,6 +110,44 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.light-mode {
+  --background: var(--color-background, #f7f2f2);
+  --foreground: var(--color-text-primary, #000000);
+  --card: var(--color-card-background, #ffffff);
+  --card-foreground: var(--color-text-primary, #000000);
+
+  --primary: var(--color-primary, #d8d8d8);
+  --primary-foreground: var(--color-on-primary, #ffffff);
+  --secondary: var(--color-secondary, #03dac6);
+  --secondary-foreground: var(--color-on-secondary, #000000);
+
+  --muted: var(--color-surface, #ffffff);
+  --muted-foreground: var(--color-text-secondary, #757575);
+
+  --border: var(--color-border, #e0e0e0);
+  --input: var(--color-card-background, #ffffff);
+  --ring: var(--color-primary-variant, #b3b3b3);
+}
+
+.dark-mode {
+  --background: var(--color-background, #121212);
+  --foreground: var(--color-text-primary, #dddddd);
+  --card: var(--color-card-background, #1f2937);
+  --card-foreground: var(--color-text-primary, #dddddd);
+
+  --primary: var(--color-primary, #8b8b8b);
+  --primary-foreground: var(--color-on-primary, #000000);
+  --secondary: var(--color-secondary, #03dac6);
+  --secondary-foreground: var(--color-on-secondary, #000000);
+
+  --muted: var(--color-surface, #121212);
+  --muted-foreground: var(--color-text-secondary, #b0b0b0);
+
+  --border: var(--color-border, #333333);
+  --input: var(--color-card-background, #1f2937);
+  --ring: var(--color-primary-variant, #d6d5d5);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
