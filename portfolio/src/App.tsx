@@ -21,15 +21,19 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <div className="mx-auto w-full max-w-[800px] min-w-[320px] border-l border-r border-border min-h-screen flex flex-col p-4">
+        <Router>
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </main>
+          <Footer />
+        </Router>
+      </div>
     </>
   );
 }
