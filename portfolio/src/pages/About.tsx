@@ -1,8 +1,38 @@
+import { useState, useEffect } from "react";
 import travel from "@/data/travel.json";
 import hiking from "@/data/hiking.json";
 import running from "@/data/running.json";
 
+interface ChessStats {
+  chess_rapid?: { last: { rating: number } };
+  chess_blitz?: { last: { rating: number } };
+}
+
 const About = () => {
+  const [chessStats, setChessStats] = useState<ChessStats | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchChessStats = async () => {
+      try {
+        const response = await fetch(
+          "https://api.chess.com/pub/player/kevinesg/stats"
+        );
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setChessStats(data);
+      } catch (error) {
+        console.error("Failed to fetch Chess.com stats:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchChessStats();
+  }, []);
+
   return (
     <>
       <div className="pb-8">
@@ -315,7 +345,24 @@ const About = () => {
                     chess.com profile
                   </a>
                 </li>
-                <li>1876 ELO (rapid)</li>
+                {loading ? (
+                  <li>Loading ratings...</li>
+                ) : (
+                  <>
+                    {chessStats?.chess_rapid && (
+                      <li>{chessStats.chess_rapid.last.rating} ELO (Rapid)</li>
+                    )}
+                    {chessStats?.chess_blitz && (
+                      <li>{chessStats.chess_blitz.last.rating} ELO (Blitz)</li>
+                    )}
+                    {!chessStats && (
+                      <>
+                        <li>1760 ELO (Rapid)</li>
+                        <li>1646 ELO (Blitz)</li>
+                      </>
+                    )}
+                  </>
+                )}
               </ul>
             </div>
           </div>
