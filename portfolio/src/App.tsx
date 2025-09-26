@@ -6,6 +6,7 @@ import Home from "@/pages/Home";
 import Experience from "@/pages/Experience";
 import About from "@/pages/About";
 import Footer from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -27,6 +28,7 @@ function App() {
     <>
       <div className="mx-auto w-full max-w-[800px] min-w-[320px] border-l border-r border-border min-h-screen flex flex-col p-4">
         <Router>
+          <ScrollToTop />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <main className="flex-grow pt-24">
             <Routes>
