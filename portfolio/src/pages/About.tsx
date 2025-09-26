@@ -5,44 +5,88 @@ import running from "@/data/running.json";
 const About = () => {
   return (
     <>
-      <div>
-        <p>Travel ✈️</p>
-        {[...travel].map((t) => (
-          <div>
-            <img src={t.photo} />
-            <p>
-              {t.place.join(" + ")}, {t.country} ({t.year})
-            </p>
-          </div>
-        ))}
+      <div className="pb-8">
+        <h2 className="text-2xl font-bold pb-4">Travel ✈️</h2>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-1">
+          {[...travel].map((t) => (
+            <div
+              key={t.photo}
+              className="relative group aspect-[3/4] overflow-hidden"
+            >
+              <img
+                src={t.photo}
+                alt={`${t.place.join(", ")} - ${t.year}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <h6 className="text-white font-bold pb-1 w-full text-center">
+                  {t.place.join(" + ")}, {t.country} ({t.year})
+                </h6>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="pb-8">
+        <h2 className="text-2xl font-bold pb-4">Hiking 🥾</h2>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-1">
+          {[...hiking]
+            .sort((a, b) => b.year - a.year)
+            .map((h) => (
+              <div
+                key={h.photo}
+                className="relative group aspect-[3/4] overflow-hidden"
+              >
+                <img
+                  src={h.photo}
+                  alt={`${h.place} - ${h.year}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                  <h6 className="text-white font-bold p-2 !indent-0 w-full text-center">
+                    {h.place} ({h.year})
+                  </h6>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+      <div className="pb-16">
+        <h2 className="text-2xl font-bold pb-4">Running 🏃‍♂️</h2>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-1">
+          {[...running]
+            .sort((a, b) => b.year - a.year)
+            .map((r) => (
+              <div
+                key={r.photo}
+                className="relative group aspect-[3/4] overflow-hidden"
+              >
+                <img
+                  src={r.photo}
+                  alt={`${r.event} - ${r.year}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                  <h6 className="text-white font-bold p-2 !indent-0 w-full text-center">
+                    {r.event} ({r.year})
+                  </h6>
+                </div>
+              </div>
+            ))}
+        </div>
       </div>
       <div>
-        <p>Hiking 🥾</p>
-        {[...hiking].map((t) => (
-          <div>
-            <img src={t.photo} />
-            <p>
-              {t.place} ({t.year})
-            </p>
-          </div>
-        ))}
-      </div>
-      <div>
-        <p>Running 🏃‍♂️</p>
-        {[...running].map((t) => (
-          <div>
-            <img src={t.photo} />
-            <p>
-              {t.event} ({t.year})
-            </p>
-          </div>
-        ))}
-      </div>
-      <div>
-        <h2>PC setup 🖧</h2>
+        <h2 className="text-2xl font-bold pb-4">PC setup 🖧</h2>
         <div>
-          <img src="/assets/photos/pc/setup_diagram.webp" alt="Setup Diagram" />
-          <div>
+          <img
+            src="/assets/photos/pc/setup_diagram.webp"
+            alt="Setup Diagram"
+            className="rounded-md overflow-hidden"
+          />
+          <div className="card my-4">
             <p>
               The home server serves as the production environment for
               self-hosted data engineering projects, such as the data-pipelines
@@ -68,10 +112,10 @@ const About = () => {
             </p>
           </div>
         </div>
-        <h3>PC 🖳</h3>
+        <h3 className="text-xl font-bold pb-4">PC 🖳</h3>
         <img src="/assets/photos/pc/pc.webp" alt="PC [pending photo]" />
 
-        <div>
+        <div className="card whitespace-pre truncate my-4">
           <span className="json-braces">{`{`}</span>
           {`
     `}
@@ -125,7 +169,7 @@ const About = () => {
     `}
           <span className="json-key">"partsList"</span>
           {`:    `}
-          <span className="json-value">
+          <span className="json-value hover:underline cursor-pointer">
             "
             <a
               href="https://pcpartpicker.com/b/qTvfrH"
@@ -140,8 +184,8 @@ const About = () => {
 `}
           <span className="json-braces">{`}`}</span>
         </div>
-        <h3>Home Server 🗄️</h3>
-        <div>
+        <h3 className="text-xl font-bold">Home Server 🗄️</h3>
+        <div className="card whitespace-pre truncate my-4">
           <span className="json-braces">{`{`}</span>
           {`
     `}
@@ -186,8 +230,8 @@ const About = () => {
 `}
           <span className="json-braces">{`}`}</span>
         </div>
-        <h3>Laptop 💻</h3>
-        <div>
+        <h3 className="text-xl font-bold">Laptop 💻</h3>
+        <div className="card whitespace-pre truncate my-4">
           <span className="json-braces">{`{`}</span>
           {`
     `}
@@ -225,22 +269,24 @@ const About = () => {
         </div>
       </div>
       <div>
-        <h2>games 🎮</h2>
-        <div>
-          <div>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Games 🎮</h2>
+        <div className="space-y-4 pb-24">
+          <div className="card flex flex-wrap gap-4">
             <img
               src="/assets/photos/games/dota2.webp"
               alt="Dota 2"
               title="Dota 2"
+              className="rounded-sm overflow-hidden flex-shrink-0 w-[50px] h-[50px] object-cover"
             />
             <div>
-              <h3>Dota 2</h3>
+              <h3 className="text-lg font-semibold">Dota 2</h3>
               <ul>
                 <li>
                   <a
                     href="https://www.dotabuff.com/players/317389712"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:underline"
                   >
                     Dotabuff profile
                   </a>
@@ -249,20 +295,22 @@ const About = () => {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="card flex flex-wrap gap-4">
             <img
               src="/assets/photos/games/chess.webp"
               alt="Chess"
               title="Chess"
+              className="rounded-sm overflow-hidden flex-shrink-0 w-[50px] h-[50px] object-cover"
             />
             <div>
-              <h3>Chess</h3>
+              <h3 className="text-lg font-semibold">Chess</h3>
               <ul>
                 <li>
                   <a
                     href="https://www.chess.com/member/kevinesg"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:underline"
                   >
                     chess.com profile
                   </a>
