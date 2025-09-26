@@ -256,6 +256,12 @@ transform: scale(1.05);
   color: #000000;
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
 @layer utilities {
   .text-card-secondary-foreground { color: var(--card-secondary-foreground); }
 }

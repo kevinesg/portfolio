@@ -1,12 +1,18 @@
 import ProfileLinks from "@/components/ProfileLinks";
 import { DownloadResumeIcon, LinkIcon } from "@/components/ui/icons";
+import { motion } from "framer-motion";
 
 import projects from "@/data/projects.json";
 import techstack from "@/data/tech-stack.json";
 
 const Home = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="flex flex-col gap-y-4 pb-24">
         <div className="flex justify-center gap-8 flex-wrap-reverse">
           <div className="justify-center ">
@@ -144,7 +150,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

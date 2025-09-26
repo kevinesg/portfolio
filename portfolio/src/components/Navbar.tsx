@@ -7,7 +7,7 @@ const Navbar = ({
   toggleDarkMode,
 }: {
   darkMode: boolean;
-  toggleDarkMode: () => void;
+  toggleDarkMode: (event: React.MouseEvent) => void;
 }) => {
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
     `flex items-center justify-center p-2 rounded-lg transition-colors ${

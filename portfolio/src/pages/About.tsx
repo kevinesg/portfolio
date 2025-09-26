@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import travel from "@/data/travel.json";
 import hiking from "@/data/hiking.json";
 import running from "@/data/running.json";
+import { motion } from "framer-motion";
 
 interface ChessStats {
   chess_rapid?: { last: { rating: number } };
@@ -34,7 +35,12 @@ const About = () => {
   }, []);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="pb-8">
         <h2 className="text-2xl font-bold pb-4">Travel ✈️</h2>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-1">
@@ -368,7 +374,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

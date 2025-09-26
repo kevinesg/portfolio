@@ -1,9 +1,15 @@
 import work_exp from "@/data/work-experience.json";
 import projects from "@/data/projects.json";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="pb-8">
         <h2 className="text-2xl font-bold pb-4">Work Experience 💼</h2>
         <div className="space-y-4">
@@ -123,7 +129,7 @@ const Experience = () => {
             ))}
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
