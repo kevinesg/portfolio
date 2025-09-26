@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import SpecsCard from "@/components/SpecsCard";
 import travel from "@/data/travel.json";
 import hiking from "@/data/hiking.json";
 import running from "@/data/running.json";
+import pc_specs from "@/data/pc_specs.json";
 import { motion } from "framer-motion";
 
 interface ChessStats {
@@ -150,159 +152,13 @@ const About = () => {
         </div>
         <h3 className="text-xl font-bold pb-4">PC 🖳</h3>
         <img src="/assets/photos/pc/pc.webp" alt="PC [pending photo]" />
+        <SpecsCard specs={pc_specs.pc.specs} linkUrl={pc_specs.pc.linkUrl} />
 
-        <div className="card whitespace-pre truncate my-4">
-          <span className="json-braces">{`{`}</span>
-          {`
-    `}
-
-          <span className="json-key">"CPU"</span>
-          {`:          `}
-          <span className="json-value">"AMD Ryzen 7 5700X"</span>
-          {`,
-    `}
-          <span className="json-key">"GPU"</span>
-          {`:          `}
-          <span className="json-value">"AMD RX 7600 XT"</span>
-          {`,
-    `}
-          <span className="json-key">"RAM"</span>
-          {`:          `}
-          <span className="json-value">"64GB"</span>
-          {`,
-    `}
-          <span className="json-key">"Motherboard"</span>
-          {`:  `}
-          <span className="json-value">"B550"</span>
-          {`,
-    `}
-          <span className="json-key">"PSU"</span>
-          {`:          `}
-          <span className="json-value">"750W"</span>
-          {`,
-    `}
-          <span className="json-key">"Storage"</span>
-          {`:    `}
-          <span className="json-bracket">{`[`}</span>
-          {`
-                    `}
-          <span className="json-value">"500GB NVMe SSD"</span>
-          {`,
-                    `}
-          <span className="json-value">"1TB NVMe SSD"</span>
-          {`,
-                    `}
-          <span className="json-value">"2TB HDD"</span>
-          {`
-                  `}
-          <span className="json-bracket">{`]`}</span>
-          {`,
-    `}
-          <span className="json-key">"OS"</span>
-          {`:           `}
-          <span className="json-value">"EndeavourOS"</span>
-          {`,
-    `}
-          <span className="json-key">"partsList"</span>
-          {`:    `}
-          <span className="json-value hover:underline cursor-pointer">
-            "
-            <a
-              href="https://pcpartpicker.com/b/qTvfrH"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://pcpartpicker.com/b/qTvfrH
-            </a>
-            "
-          </span>
-          {`
-`}
-          <span className="json-braces">{`}`}</span>
-        </div>
         <h3 className="text-xl font-bold">Home Server 🗄️</h3>
-        <div className="card whitespace-pre truncate my-4">
-          <span className="json-braces">{`{`}</span>
-          {`
-    `}
-          <span className="json-key">"CPU"</span>
-          {`:          `}
-          <span className="json-value">"Intel Celeron N5105"</span>
-          {`,
-    `}
-          <span className="json-key">"GPU"</span>
-          {`:          `}
-          <span className="json-value">"Intel JasperLake [UHD Graphics]"</span>
-          {`,
-    `}
-          <span className="json-key">"RAM"</span>
-          {`:          `}
-          <span className="json-value">"12GB"</span>
-          {`,
-    `}
-          <span className="json-key">"Storage"</span>
-          {`:    `}
-          <span className="json-bracket">{`[`}</span>
-          {`
-                    `}
-          <span className="json-value">"250GB NVMe SSD"</span>
-          {`,
-                    `}
-          <span className="json-value">"2TB SATA SSD"</span>
-          {`
-                  `}
-          <span className="json-bracket">{`]`}</span>
-          {`,
-    `}
-          <span className="json-key">"OS"</span>
-          {`:           `}
-          <span className="json-value">"Ubuntu Server 24.04 LTS"</span>
-          {`,
-    `}
-          <span className="json-key">"DAS"</span>
-          {`:          `}
-          <span className="json-value">"1x 8TB HDD"</span>
-          {`
-`}
-          <span className="json-braces">{`}`}</span>
-        </div>
+        <SpecsCard specs={pc_specs.homeServer.specs} />
+
         <h3 className="text-xl font-bold">Laptop 💻</h3>
-        <div className="card whitespace-pre truncate my-4">
-          <span className="json-braces">{`{`}</span>
-          {`
-    `}
-          <span className="json-key">"Model"</span>
-          {`:        `}
-          <span className="json-value">"Acer Aspire 3 A315-44P-R9WX"</span>
-          {`,
-    `}
-          <span className="json-key">"CPU"</span>
-          {`:          `}
-          <span className="json-value">"AMD Ryzen 7 5700U"</span>
-          {`,
-    `}
-          <span className="json-key">"GPU"</span>
-          {`:          `}
-          <span className="json-value">"AMD Radeon Graphics"</span>
-          {`,
-    `}
-          <span className="json-key">"RAM"</span>
-          {`:          `}
-          <span className="json-value">"16GB"</span>
-          {`,
-    `}
-          <span className="json-key">"Storage"</span>
-          {`:      `}
-          <span className="json-value">"500GB SSD"</span>
-          {`,
-    `}
-          <span className="json-key">"OS"</span>
-          {`:           `}
-          <span className="json-value">"EndeavourOS"</span>
-          {`
-`}
-          <span className="json-braces">{`}`}</span>
-        </div>
+        <SpecsCard specs={pc_specs.laptop.specs} />
       </div>
       <div>
         <h2 className="text-2xl font-bold mt-8 mb-4">Games 🎮</h2>
