@@ -8,15 +8,19 @@ import About from "@/pages/About";
 import Footer from "@/components/Footer";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme !== "light";
+  });
 
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode);
     document.body.classList.toggle("light-mode", !darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevMode) => !prevMode);
   };
 
   return (
@@ -24,7 +28,7 @@ function App() {
       <div className="mx-auto w-full max-w-[800px] min-w-[320px] border-l border-r border-border min-h-screen flex flex-col p-4">
         <Router>
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <main className="flex-grow">
+          <main className="flex-grow pt-24">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/experience" element={<Experience />} />
