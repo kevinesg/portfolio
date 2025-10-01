@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import SpecsCard from "@/components/SpecsCard";
+import { RapidIcon, BlitzIcon, BulletIcon } from "@/components/ui/icons";
 import travel from "@/data/travel.json";
 import hiking from "@/data/hiking.json";
 import running from "@/data/running.json";
@@ -9,6 +10,7 @@ import { motion } from "framer-motion";
 interface ChessStats {
   chess_rapid?: { last: { rating: number } };
   chess_blitz?: { last: { rating: number } };
+  chess_bullet?: { last: { rating: number } };
 }
 
 const About = () => {
@@ -212,16 +214,43 @@ const About = () => {
                 ) : (
                   <>
                     {chessStats?.chess_rapid && (
-                      <li>{chessStats.chess_rapid.last.rating} ELO (Rapid)</li>
+                      <li className="flex items-center gap-3">
+                        <RapidIcon size={24} />
+                        <div className="flex items-center w-full">
+                          <span className="text-sm text-muted-foreground">
+                            Rapid
+                          </span>
+                          <span className="ml-auto font-medium tabular-nums">
+                            {chessStats.chess_rapid.last.rating}
+                          </span>
+                        </div>
+                      </li>
                     )}
                     {chessStats?.chess_blitz && (
-                      <li>{chessStats.chess_blitz.last.rating} ELO (Blitz)</li>
+                      <li className="flex items-center gap-3">
+                        <BlitzIcon size={24} />
+                        <div className="flex items-center w-full">
+                          <span className="text-sm text-muted-foreground">
+                            Blitz
+                          </span>
+                          <span className="ml-auto font-medium tabular-nums">
+                            {chessStats.chess_blitz.last.rating}
+                          </span>
+                        </div>
+                      </li>
                     )}
-                    {!chessStats && (
-                      <>
-                        <li>1760 ELO (Rapid)</li>
-                        <li>1646 ELO (Blitz)</li>
-                      </>
+                    {chessStats?.chess_bullet && (
+                      <li className="flex items-center gap-3">
+                        <BulletIcon size={24} />
+                        <div className="flex items-center w-full">
+                          <span className="text-sm text-muted-foreground">
+                            Bullet
+                          </span>
+                          <span className="ml-auto font-medium tabular-nums">
+                            {chessStats.chess_bullet.last.rating}
+                          </span>
+                        </div>
+                      </li>
                     )}
                   </>
                 )}
