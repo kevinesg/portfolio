@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 interface ChessStats {
   chess_rapid?: { last: { rating: number } };
   chess_blitz?: { last: { rating: number } };
+  chess_bullet?: { last: { rating: number } };
 }
 
 const About = () => {
@@ -217,10 +218,16 @@ const About = () => {
                     {chessStats?.chess_blitz && (
                       <li>{chessStats.chess_blitz.last.rating} ELO (Blitz)</li>
                     )}
+                    {chessStats?.chess_bullet && (
+                      <li>
+                        {chessStats.chess_bullet.last.rating} ELO (Bullet)
+                      </li>
+                    )}
                     {!chessStats && (
                       <>
-                        <li>1760 ELO (Rapid)</li>
-                        <li>1646 ELO (Blitz)</li>
+                        <li>1750 ELO (Rapid)</li>
+                        <li>1800 ELO (Blitz)</li>
+                        <li>1700 ELO (Bullet)</li>
                       </>
                     )}
                   </>
