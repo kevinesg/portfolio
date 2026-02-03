@@ -2,6 +2,37 @@ import work_exp from "@/data/work-experience.json";
 import projects from "@/data/projects.json";
 import { motion } from "framer-motion";
 
+const renderTextWithLinks = (text: string) => {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:text-blue-500"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+};
+
 const Experience = () => {
   return (
     <motion.div
@@ -39,7 +70,7 @@ const Experience = () => {
                     <ul>
                       {exp.description.map((item, index) => (
                         <li key={`${exp.id}-desc-${index}`} className="">
-                          {item}
+                          {renderTextWithLinks(item)}
                         </li>
                       ))}
                       <li className="flex flex-wrap">
