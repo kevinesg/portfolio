@@ -50,7 +50,7 @@
     "logo": "/assets/photos/experience/work/company-logo-gotyme.webp",
     "url": "https://www.gotyme.com.ph/",
     "description": [
-      "worked at [SAVii](https://savii.io) (sister company of GoTyme) from NOV 2024 - JAN 2026, merged with GoTyme on FEB 2026)",
+      "worked at [SAVii](https://savii.io) (sister company of GoTyme) from NOV 2024 - JAN 2026, merged with GoTyme on FEB 2026",
       "Created a complete documentation of data flow from raw to transformed tables",
       "Migrated scheduled queries from BigQuery to dbt models for better version control and lineage tracking"
     ],
