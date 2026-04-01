@@ -1,6 +1,24 @@
 [
   {
     "country": "JP",
+    "place": ["Yamanashi"],
+    "year": 2026,
+    "photo":  "/assets/photos/travel/yamanashi_2026.webp"
+  },
+  {
+    "country": "JP",
+    "place": ["Tokyo"],
+    "year": 2026,
+    "photo":  "/assets/photos/travel/received_763904033251045.webp"
+  },
+  {
+    "country": "JP",
+    "place": ["Hokkaido"],
+    "year": 2026,
+    "photo":  "/assets/photos/travel/hokkaido_2026.webp"
+  },
+  {
+    "country": "JP",
     "place": ["Osaka"],
     "year": 2025,
     "photo": "/assets/photos/travel/osaka_2025.webp"
