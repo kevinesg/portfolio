@@ -49,10 +49,10 @@ const Home = () => {
         <div className="flex flex-col gap-y-4 pb-4">
           <div className="card">
             <p className="pb-4">
-              Hi 👋 I'm Kevin, a Data Engineer with 4 years of related work
-              experience. I build and document ETL/ELT pipelines, architect data
+              Hi 👋 I'm Kevin, a Data Engineer with 5 years of related work
+              experience. <del>I build and document ETL/ELT pipelines, architect data
               foundations, and partner with stakeholders to turn questions into
-              insights.
+              insights.</del> I am a big CSV mover.
             </p>
             <p>
               I favor free and open-source tools and am dabbling in web
