@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "img": "/assets/photos/experience/project/project-wremotely.png",
+    "name": "wremotely.com",
+    "description": "remote jobs aggregator sourced directly from company career pages and ATS platforms",
+    "url": "https://wremotely.com",
+    "tech": ["Svelte", "TypeScript", "shadcnui", "FastAPI", "postgresql", "Docker", "githubactions"]
+  },
+  {
+    "id": 2,
     "img": "/assets/photos/experience/project/project-data-platform.webp",
     "name": "data platform",
     "description": "my ideal end-to-end data platform architecture using FOSS tools and GCP, with proper CI/CD and monitoring",
@@ -18,7 +26,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "img": "/assets/photos/experience/project/project-gen1-starters-pokedex.webp",
     "name": "Gen 1 Starters Pokedex",
     "description": "real-time object detector Android mobile app that recognizes the first generation Pokemon starters",
@@ -26,7 +34,7 @@
     "tech": ["Python", "TensorFlow", "AndroidStudio"]
   },
   {
-    "id": 3,
+    "id": 4,
     "img": "/assets/photos/experience/project/project-kevinesg.webp",
     "name": "kevinesg.com",
     "description": "this portfolio website",
