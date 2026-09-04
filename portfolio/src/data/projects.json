@@ -1,11 +1,19 @@
 [
   {
     "id": 1,
-    "img": "/assets/photos/experience/project/project-wremotely.png",
-    "name": "wremotely.com",
-    "description": "remote jobs aggregator sourced directly from company career pages and ATS platforms",
-    "url": "https://wremotely.com",
-    "tech": ["Svelte", "TypeScript", "shadcnui", "FastAPI", "postgresql", "Docker", "githubactions"]
+    "img": "/assets/photos/experience/project/project-workfinds.jpg",
+    "name": "workfinds.app",
+    "description": "remote, hybrid, and onsite jobs from company career pages",
+    "url": "https://workfinds.app",
+    "tech": [
+      "Svelte",
+      "TypeScript",
+      "shadcnui",
+      "FastAPI",
+      "postgresql",
+      "Docker",
+      "githubactions"
+    ]
   },
   {
     "id": 2,
